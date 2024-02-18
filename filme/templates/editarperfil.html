@@ -13,6 +13,7 @@
 
             <form method="post">
                {% csrf_token %}
+
                 <fieldset class="form-group">
                     <legend class="border-bottom mb-4">Edite os campos abaixo para editar seu perfil</legend>
                     {{ form|crispy }}

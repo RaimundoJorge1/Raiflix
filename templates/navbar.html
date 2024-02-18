@@ -11,6 +11,7 @@
        <div class="mr-2">
           <form method="get" action="{% url 'filme:pesquisafilme' %}">
               {% csrf_token %}
+
               <input type="text" class="py-1 px-2 rounded-md text-black" name="query" value="{{ request.GET.query }}" placeholder="Pesquisar...">
               <input type="submit" value="">
           </form>
