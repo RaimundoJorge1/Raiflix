@@ -20,4 +20,6 @@ var/
 .installed.cfg
 db.sqlite3
 .venvj
+.venvj/
+
 desktop.ini
