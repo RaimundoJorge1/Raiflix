@@ -30,8 +30,9 @@ else:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["raiflix-production.up.railway.app", "localhost","127.0.0.1/"]
 
+ALLOWED_HOSTS = ["raiflix-production.up.railway.app", "localhost","127.0.0.1"]
+#ALLOWED_HOSTS =[]
 
 # Application definition
 
@@ -99,7 +100,7 @@ import dj_database_url
 DATABASE_URL = os.getenv("DATABASE_URL")
 if DATABASE_URL:
    DATABASE = {
-       'default': dj_database_url.config(default=DATABASE_URL,conn_max_age=1800)
+       'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)
    }
 
 # Password validation
@@ -156,5 +157,8 @@ LOGIN_URL = 'filme:login'
 LOGOUT_REDIRECT_URL = 'filme:logout'
 LOGOUT_URL = 'filme:logout'
 
+
+
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap5'

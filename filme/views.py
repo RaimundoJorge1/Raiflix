@@ -36,7 +36,7 @@ class Detalhesfilme(LoginRequiredMixin, DetailView):
     def get(self, request, *args, **kwargs):
         # contabilizar uma visualização
         filme = self.get_object()
-        filme.visualizacoes += 1
+        filme.visuailacoes += 1
         filme.save()
         usuario = request.user
         usuario.filmes_vistos.add(filme)
