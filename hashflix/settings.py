@@ -31,7 +31,7 @@ else:
 DEBUG = True
 
 
-ALLOWED_HOSTS = ["raiflix-production.up.railway.app", "localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["https://raiflix-production.up.railway.app/", "localhost","127.0.0.1"]
 #ALLOWED_HOSTS =[]
 
 # Application definition
